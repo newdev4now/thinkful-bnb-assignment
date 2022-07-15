@@ -118,6 +118,14 @@ form {
   padding: 10px;
 }
 
+/* Styling the input and select controls */
+form input:focus,
+form select:focus {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .1);
+}
+
+
 /* Separate the form-label and the form-input. */
 .form-row {
   display: flex;
@@ -136,7 +144,7 @@ form {
 }
 
 .form-row > button {
-  flex: 3;
+  flex: 1;
 }
 
 form label {
@@ -232,7 +240,13 @@ footer p {
   #item2 {
     flex: 1;
     margin: 1vw 1%;
-    width: 30%;
+    width: 25%;
+  }
+
+  #item3 {
+    flex: 1;
+    margin: 1vw 1%;
+    width: 50%;
   }
 
   /*------Ideas-------*/
@@ -275,11 +289,43 @@ footer p {
     width: 50%;
   }
 
+  /*---------Host---------*/
   #item8 {
     flex: 1;
     margin: 1vw 1%;
     width: 50%;
   }
 
+  #item9 {
+    flex: 1;
+    margin: 1vw 1%;
+    width: 50%;
+  }
 
+}
+
+@media all and (min-width: 800px) {
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    line-height: 2em;
+  }
+
+  .logo {
+    font-size: 82px;
+  }
+
+  form button {
+    font-size: 34px;
+  }
+
+  header nav {
+    font-size: 34px;
+  }
 }
