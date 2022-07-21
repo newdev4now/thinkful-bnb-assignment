@@ -281,6 +281,11 @@ footer p {
     /* Aligns the `flex-items` to center vertically. */
     align-items: center;
   }
+
+  .logo.reducedwidth {
+    text-align: left;
+  }
+
   /*-------  Form  -------*/
   form {
     /* Change display of `form` to a row. */
