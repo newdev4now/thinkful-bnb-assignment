@@ -55,6 +55,7 @@ main img {
 img {
   width: 100%;
 }
+
 /* ---  Groups & Items --- */
 
 .group {
@@ -115,12 +116,12 @@ header {
 
 }
 
+
 .logo.reducedwidth {
   align-content: center;
   justify-content: center;
   text-align-last: right;
 }
-
 
 
 /* Adding `header nav ul` to CSS. */
