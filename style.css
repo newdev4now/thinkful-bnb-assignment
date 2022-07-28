@@ -23,6 +23,14 @@ html, body {
   padding: 0px;
 }
 
+.page-header {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  transform-box: view-box;
+}
+
 .page-header nav {
   display: flex;
   flex-wrap: wrap;
@@ -48,7 +56,7 @@ html, body {
 
 
 h2 {
-  font-size: 26px;
+  font-size: 1.rem;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
@@ -120,15 +128,17 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 2.25rem;
   color: #fff;
-  flex-basis: auto;
+  flex-basis: 100%;
+  min-width: 25vw;
 }
 
 header nav ul li {
   list-style-type: none;
   flex-shrink: 1;
   flex-basis: auto;
+  font-size: .5rem;
 }
 
 header nav ul li a {
@@ -196,7 +206,7 @@ form {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.25;
   padding: .75rem;
   flex-grow: 1;
   flex-shrink: 0;
@@ -277,6 +287,16 @@ footer p {
 
 
 /* -------  Media Query ------- */
+@media all and (min-width: 300px) {
+  .logo {
+    font-size: 3.5rem;
+  }
+
+  header nav ul li {
+    font-size: .75rem;
+  }
+}
+
 @media all and (min-width: 480px) {
   header {
     /* Changes display from `flex-column` to `flex-row`. */
@@ -288,6 +308,10 @@ footer p {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+  }
+
+  .logo {
+    font-size: 3rem;
   }
 
   nav {
@@ -303,7 +327,7 @@ footer p {
 
   header nav ul li a {
     padding: 0 .5rem 0 0;
-    font-size: .75rem;
+    font-size: 1rem;
   }
 
   /*-------  Form  -------*/
@@ -442,7 +466,21 @@ footer p {
   }
 }
 
-@media all and (min-width: 620px) {
+/* This media query allows more flow of the header */
+@media all and (min-width: 580px) {
+  .logo {
+    font-size: 3.5rem;
+  }
+
+  .form-box button {
+    font-size: 1.25rem;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .logo {
+    font-size: 4.5rem;
+  }
   ul#menu {
     padding-left: 40px;
   }
